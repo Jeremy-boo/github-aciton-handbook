@@ -24,8 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: |
-           git clone https://github.com/goharbor/harbor.git
+        run: |
+          git clone https://github.com/goharbor/harbor.git src/github.com/goharbor/harbor
+          cd src/github.com/goharbor/harbor && ls
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
