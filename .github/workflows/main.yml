@@ -26,6 +26,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: https://github.com/Jeremy-boo/my-awesome-project
+          token: ${{secrets.GitHub_PAT}}
+
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
